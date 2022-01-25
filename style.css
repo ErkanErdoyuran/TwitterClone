@@ -26,7 +26,7 @@ html,body{
     background-image: url("bg.png");
     display:flex;
     height: 100%;
-    width: 55%;
+    width: 53%;
     flex-shrink: 1;
     flex-grow: 1;
     justify-content: center;
@@ -37,12 +37,14 @@ html,body{
   font-size: 25rem;
 }
 .loginArea{
+    
     display:flex;
+    padding-left: 10px;
     height: 100%;
     width: 45%;
     flex-grow: 1;
     align-items: center;
-    background: black;
+  
 
 }
 .SignArea{
@@ -58,16 +60,18 @@ html,body{
 }
 .SignArea h1 {
   display: flex;
+  color: black;
   align-items: center;
-  font-size: 92px;
+  font-size: 82px;
   font-weight: 700;
   letter-spacing: -1.2px;
   line-break: 84px;
-  flex-grow: 2;
+  flex-grow: 1;
   flex-shrink: 0;
 }
 .SignArea h3 {
-  font-size: 50px;
+  color: black;
+  font-size: 40px;
   font-weight: 700;
   line-height: 36px;
   text-decoration: none solid rgb(217, 217, 217);
@@ -76,13 +80,20 @@ html,body{
   flex-grow:1;
 }
 .SignArea p {
-  font-size: 11px;
+  position: relative;
+  top: -15px;
+  color: rgb(102, 102, 102);
+  font-size: 11.4px;
   line-height: 12px;
   text-decoration: none solid rgb(110, 118, 125);
   white-space: pre-wrap;
-  word-spacing: 0px;
+  word-spacing: 1.5px;
+}
+.loginArea p a{
+  color: #00acee;
 }
 .SignArea h5 {
+  color: black;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -101,6 +112,8 @@ html,body{
   color: #00acee;
 }
 .signBtn{
+  position: relative;
+  bottom: -40px;
   display: flex;
   flex-grow: 1;
   width: 100%;
@@ -111,7 +124,7 @@ html,body{
   max-width:50%;  
 }
 .signBtn button{
-  width: 100%;
+  width: 90%;
   padding:10px 20px;
   color:white;
   background: #1D9BF0;
@@ -134,7 +147,6 @@ html,body{
   flex-wrap: nowrap;
   overflow: hidden;
   padding:7px;
-  background: #000000;
   color: #1DA1F2;
   width: 300px;
   font-size: 1.0rem;
@@ -146,11 +158,12 @@ html,body{
   justify-content: center;
 }
 .loginBtn:hover {
-  background: rgb(83,100,113);
+  background: rgb(206, 235, 255);
 }
+
+
 /* FOOTER START */
 .footer {
-  background: black;
   height: 4%;
   display: flex;
   align-items: center;
@@ -163,7 +176,8 @@ html,body{
 
 .footer ul li {
   list-style-type: none;
-  margin-left: 15px;
+  margin-left: 20px;
+  font-weight: 450;
 }
 
 .footer ul li a, p {
